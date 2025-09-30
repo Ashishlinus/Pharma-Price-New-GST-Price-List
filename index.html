@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharma Price List</title>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 10px;
+  }
+
+  /* 🔎 Search Box */
+  #searchBox {
+    margin: 10px 0;
+    width: 90%;
+    max-width: 350px;
+    height: 36px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: block;
+  }
+
+  /* 📋 Table */
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  th {
+    background: #f2f2f2;
+  }
+
+  /* ✅ Bold MRP column */
+  #productTable td:nth-child(5),
+  #productTable th:nth-child(5) {
+    font-weight: bold;
+  }
+
+  /* 🔹 Mobile Adjustments */
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 12px;
+    }
+    #searchBox {
+      font-size: 12px;
+      height: 32px;
+    }
+    table {
+      font-size: 11px;
+    }
+    th, td {
+      padding: 4px;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+  <center><h2>CHARAK PHARMA PVT. LTD.</h2>
+  <h3>PHARMA DIVISION - 29-09-2025</h3>
+
+  <!-- 🔎 Search Box -->
+  <input type="text" id="searchBox" placeholder="Search product..." onkeyup="searchTable()"></center>
+
+  <!-- 📋 Table inside scrollable container -->
+  <div class="table-container">
+    <table id="productTable">
+      <thead>
+        <tr>
+          <th>HSN Code</th>
+          <th>Product</th>
+          <th>CGST %</th>
+          <th>SGST %</th>
+          <th>MRP</th>
+          <th>Trade Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>30049011</td>
+          <td>ADDYZOA CA20</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <b><td>225.00</td></b>
+          <td>171.43</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>ALKA-5 SY100</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>99.00</td>
+          <td>75.43</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>CALCURY SYRUP 200ML</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>200.00</td>
+          <td>152.38</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>CALCURY TA40</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>106.00</td>
+          <td>81.76</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>CALCURY TA500</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>736.00</td>
+          <td>560.76</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>CALCURY TA60</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>187.00</td>
+          <td>142.48</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>CHROPAXE TA30</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>253.00</td>
+          <td>192.76</td>
+        </tr>
+        <tr>
+          <td>21069099</td>
+          <td>CYSTOLIB NUTRA TAB30</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>249.00</td>
+          <td>189.71</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>ENDOTONE CA20</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>183.00</td>
+          <td>139.43</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>EVANOVA CA20</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>169.00</td>
+          <td>128.76</td>
+        </tr>
+		<tr>
+          <td>21069099</td>
+          <td>EXPIJOY NUTRA TA30</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>1228.00</td>
+          <td>935.62</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>EXTRAMMUNE SY200</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>131.00</td>
+          <td>99.81</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>EXTRAMMUNE TA30</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>122.00</td>
+          <td>92.95</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>FEMIFORTE TA30</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>109.00</td>
+          <td>83.05</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>FEMIPLEX GEL 30GM</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>93.00</td>
+          <td>70.72</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>FEMIPLEX TA75</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>155.00</td>
+          <td>118.10</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>GALAKOL GRANULES 15GMS X 10</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>220.00</td>
+          <td>167.62</td>
+        </tr>
+        <tr>
+          <td>33059011</td>
+          <td>GALAKOL TA60</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>206.00</td>
+          <td>156.95</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>GUMTONE GEL 50GMS</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>82.00</td>
+          <td>62.48</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>GUMTONE PO40</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>84.00</td>
+          <td>64.00</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>HALEEZY SYRUP SY200</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>94.00</td>
+          <td>71.62</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>HALEEZY TABLETS TA30</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>91.00</td>
+          <td>69.33</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>HYPONIDD TA30</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>138.00</td>
+          <td>105.14</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>KOFOL CHEWABLE TA60</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>56.00</td>
+          <td>42.67</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>KOFOL CHEWABLE TA20</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>18.00</td>
+          <td>13.71</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>KOFOL LOZENGES HONEY LEMON JAR</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>375.00</td>
+          <td>303.57</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>KOFOL LOZENGES MINT JAR</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>375.00</td>
+          <td>303.57</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>KOFOL LOZENGES ORANGE JAR</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>375.00</td>
+          <td>303.57</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>KOFOL SF SYRUP 100ML</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>103.00</td>
+          <td>78.48</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>KOFOL ROLL ON 10ML</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>56.00</td>
+          <td>42.67</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>KOFOL RUB</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>56.00</td>
+          <td>44.80</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>KOFOL GARGLE 100ML</td>
+          <td>9.00</td>
+          <td>9.00</td>
+          <td>128.00</td>
+          <td>91.11</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>KOFOL AYURVEDI SIP 3 GM X 10</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>141.00</td>
+          <td>107.43</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>LIVOMYN 100ML</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>82.00</td>
+          <td>62.48</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>LIVOMYN 200ML</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>178.00</td>
+          <td>135.62</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>LIVOMYN 450ML</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>244.00</td>
+          <td>185.90</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>LIVOMYN DRP60</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>81.00</td>
+          <td>61.71</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>LIVOMYN TA30</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>148.00</td>
+          <td>112.76</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>LIVOMYN TA500</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>764.00</td>
+          <td>582.10</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>LUNAREX FORTE CA20</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>124.00</td>
+          <td>94.48</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>M2TONE FORTE 200ML</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>156.00</td>
+          <td>118.86</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>M2TONE 200ML</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>159.00</td>
+          <td>121.14</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>M2TONE 450ML</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>262.00</td>
+          <td>199.62</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>M2TONE TA30</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>197.00</td>
+          <td>150.10</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>MANOLL CA20</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>93.00</td>
+          <td>70.86</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>MANOLL M400</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>206.00</td>
+          <td>156.95</td>
+        </tr>
+        <tr>
+          <td>21069099</td>
+          <td>MANOLL NUTRA 400GM</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>329.00</td>
+          <td>250.67</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>NEO TA75</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>152.00</td>
+          <td>115.81</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>OBENYL TA30</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>91.00</td>
+          <td>69.33</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>OJUS SY200</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>98.00</td>
+          <td>74.67</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>OJUS TA30</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>109.00</td>
+          <td>83.05</td>
+        </tr>
+        <tr>
+          <td>21069099</td>
+          <td>OSTOLIEF NUTRA TA30</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>444.00</td>
+          <td>338.29</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>POSEX FORTE CA20</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>117.00</td>
+          <td>89.14</td>
+        </tr>
+        <tr>
+          <td>30049011</td>
+          <td>PROSTEEZ TA20</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>153.00</td>
+          <td>116.57</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>RICHELTH 20 CAPS</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>185.00</td>
+          <td>140.95</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>VIVADONE CA20</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>186.00</td>
+          <td>141.71</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>VOMITEB SYRUP 100ML</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>98.00</td>
+          <td>74.67</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>VOMITEB TA30</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>94.00</td>
+          <td>71.62</td>
+        </tr>
+		<tr>
+          <td>21069099</td>
+          <td>ZOAZEST NUTRA TA30</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>369.00</td>
+          <td>281.14</td>
+        </tr>
+		<tr>
+          <td>21069099</td>
+          <td>ZZOWIN NUTRA TA30</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>444.00</td>
+          <td>338.29</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>NEEM + TA60</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>280.00</td>
+          <td>213.33</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>ARJUNA + TA60</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>291.00</td>
+          <td>221.71</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>HALDI + TA60</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>327.00</td>
+          <td>249.14</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>AMLA + TA60</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>271.00</td>
+          <td>206.48</td>
+        </tr>
+		<tr>
+          <td>30049011</td>
+          <td>VEDISTRY SHILAJIT GOLD CAPSULE</td>
+          <td>2.50</td>
+          <td>2.50</td>
+          <td>937.00</td>
+          <td>713.90</td>
+        </tr>
+		
+  </div>
+
+  <script>
+    function searchTable() {
+      let input = document.getElementById("searchBox").value.toLowerCase();
+      let table = document.getElementById("productTable");
+      let rows = table.getElementsByTagName("tr");
+
+      for (let i = 1; i < rows.length; i++) { // skip header row
+        let cells = rows[i].getElementsByTagName("td");
+        let found = false;
+        for (let j = 0; j < cells.length; j++) {
+          if (cells[j].innerText.toLowerCase().includes(input)) {
+            found = true;
+            break;
+          }
+        }
+        rows[i].style.display = found ? "" : "none"; // ✅ Show only matching rows
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
